@@ -10,6 +10,7 @@ import java.util.Random;
 
 /**
  * Created by mickey.1cx on 02.02.2018.
+ * http://www.emanueleferonato.com/2008/03/21/playing-with-box2dflashas3/
  */
 
 public class Demo_01 extends DemoConstructor {

@@ -12,6 +12,7 @@ import com.badlogic.gdx.physics.box2d.BodyDef;
 
 /**
  * Created by mickey.1cx on 03.02.2018.
+ * http://www.emanueleferonato.com/2008/07/17/create-a-flash-game-like-totem-destroyer/
  */
 
 public class Demo_02 extends DemoConstructor {
