@@ -18,17 +18,13 @@ public class Demo_01 extends DemoConstructor {
     public Demo_01() {
 
         gravity = new Vector2(0, -100);
-        widthScr = Gdx.graphics.getWidth();
-        heightScr = Gdx.graphics.getHeight();
-
-
 
     }
 
     @Override
     public void init(World world) {
 
-        this.world = world;
+        super.init(world);
 
         BodyBulder.createBox(world, widthScr /2, 0, 500, 20, true, false); // floor
 

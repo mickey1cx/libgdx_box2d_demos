@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer;
 import com.badlogic.gdx.physics.box2d.World;
+import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.port.box.demos.*;
 
 public class portBox extends ApplicationAdapter {
@@ -14,21 +15,21 @@ public class portBox extends ApplicationAdapter {
 	private Box2DDebugRenderer bdr;
 	private OrthographicCamera camera;
 
-	private Demo_02 demo;
+	private Demo_03 demo;
 
 	@Override
 	public void create () {
 
-		demo =  new Demo_02();
+		demo =  new Demo_03();
 
 		world = new World(demo.gravity, true);
 		bdr = new Box2DDebugRenderer();
 
+		demo.init(world);
+
 		camera = new OrthographicCamera();
 		camera.setToOrtho(false, demo.widthScr, demo.heightScr);
 		camera.combined.scl(demo.scale);
-
-		demo.init(world);
 
 	}
 
